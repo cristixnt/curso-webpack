@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "webpack --mode production --config webpack.config.js",
+    "build": "webpack ./scripts/create.evn.js && --mode production --config webpack.config.js",
     "dev": "webpack --config webpack.config.dev.js",
     "build:watch": "webpack --watch --config webpack.config.dev.js"
   },
@@ -39,6 +39,7 @@
     "html-webpack-plugin": "^5.2.0",
     "loader": "^2.1.1",
     "mini-css-extract-plugin": "^1.3.9",
+    "stylus": "^0.59.0",
     "stylus-loader": "^5.0.0",
     "terser-webpack-plugin": "^5.3.6",
     "url-loader": "^4.1.1",
